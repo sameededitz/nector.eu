@@ -105,3 +105,8 @@
     height: 12px;
     border-radius: 12px;
 }
+.ham-icon{
+    outline: none;
+    border: none;
+    background: transparent;
+}
