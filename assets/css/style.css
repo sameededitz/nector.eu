@@ -275,6 +275,10 @@
 
 .dropdwn-txt {
     font-size: 18px !important;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .filter-btn {
@@ -305,10 +309,12 @@
     font-weight: 400 !important;
 }
 
-.contry{
+.contry {
     font-size: 15px !important;
 }
-.invest-tb td, .table-filter th{
+
+.invest-tb td,
+.table-filter th {
     font-size: 15px !important;
     padding: .5rem .2rem !important;
 }
@@ -319,101 +325,182 @@
 
 @media (max-width: 992px) {
     .table-mdsm-tab {
-        /* display: unset !important; */
+        display: unset !important;
         font-size: 14px !important;
     }
-    .fil-tb{
+
+    .fil-tb {
         display: none;
     }
 }
-.invest-form{
+
+.invest-form {
     background: #f6f6f9;
     border-radius: 29px;
 }
-.invest-form label{
+
+.invest-form label {
     font-size: 15px;
     font-style: italic;
 }
-.invest-form input{
+
+.invest-form input {
     outline: none;
     border: none;
     background: #f6f6f9;
     padding: 8px 6px;
     width: 100%;
 }
-.invest-form button{
+
+.invest-form button {
     padding: 12px 18px;
 }
-@media (max-width:992px){
-    .invest-form{
+
+@media (max-width:992px) {
+    .invest-form {
         padding-right: 0;
     }
-    .invest-form button{
+
+    .invest-form button {
         width: 40%;
     }
 }
-.page-pagin .row{
+
+.page-pagin .row {
     margin-left: 0;
     margin-right: 0;
 }
-.page-pagin .row .dropdown-menu{
+
+.page-pagin .row .dropdown-menu {
     width: 98% !important;
 }
-.pagin-num button{
+
+.pagin-num button {
     border-radius: 999px;
     outline: none;
     border: none;
     padding: 10px;
 }
-.pagin-num button.active{
+
+.pagin-num button.active {
     background: #000;
     color: #fff;
 }
-.pagin-num button span{
+
+.pagin-num button span {
     width: 24px;
     height: 24px;
     display: block;
     text-align: center;
 }
-.page-pagin .row .dropdown-menu{
+
+.page-pagin .row .dropdown-menu {
     width: 100% !important;
 }
-@media (max-width:992px){
-    .items-drp button{
+
+@media (max-width:992px) {
+    .items-drp button {
         max-width: 180px;
     }
-    .items-drp button span{
+
+    .items-drp button span {
         margin-left: 0;
     }
-    .items-drp button label{
+
+    .items-drp button label {
         font-size: 12px !important;
     }
-    .page-pagin .row .dropdown-menu{
+
+    .page-pagin .row .dropdown-menu {
         width: 100% !important;
     }
-    .bn-reso{
+
+    .bn-reso {
         padding: 14px 17px;
     }
 }
-@media (max-width:576px){
-    .page-pagin .row{
+
+@media (max-width:576px) {
+    .page-pagin .row {
         flex-direction: column !important;
         justify-content: center !important;
     }
-    .page-pagin .row .col-12{
+
+    .page-pagin .row .col-12 {
         align-items: center;
         display: flex;
         justify-content: center;
     }
-    .page-pagin .row .dropdown-menu{
+
+    .page-pagin .row .dropdown-menu {
         width: 99% !important;
     }
 }
 
 /* portfolio page css */
-.pt-fil-tb th{
+.pt-fil-tb th {
     font-size: 13px !important;
 }
-.pt-fil-tb td{
+
+.pt-fil-tb td {
     font-size: 12px !important;
+}
+
+/* statement page css */
+.dropdwn-inpt {
+    outline: none;
+    border: none;
+    background: inherit;
+}
+
+.download-bnt {
+    border: 2px solid #000 !important;
+    border-radius: 999px;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+}
+
+@media (max-width:576px) {
+    .down-fil-btn .f-btn {
+        padding: 10px 22px;
+    }
+    .download-bnt{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .c-btn{
+        padding: 0 !important;
+        padding-left: 8px !important;
+        font-size: 15px !important;
+    }
+    
+}
+.filda-box{
+    border-right: 2px solid #d0d2dc;
+}
+.filda-box div{
+    font-size: 12px;
+    color: rgba(0,0,0,.6);
+}
+.filda-title{
+    text-overflow: ellipsis;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width:992px){
+    .filda-box{
+        border-right: 0;
+    }
+    .filter-data .order-1.filda-item, .filter-data .order-3.filda-item{
+        border-left: 2px solid #d0d2dc !important;
+    }
+    .filter-data .order-3.filda-item, .filter-data .order-2.filda-item{
+        border-top: 2px solid #d0d2dc !important;
+    }
 }
