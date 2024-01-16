@@ -1,0 +1,116 @@
+<style>
+
+.banner-heading {
+    font-size: 3rem !important;
+    line-height: 3.625rem;
+    color: #141414;
+}
+
+.banner-para {
+    color: #616575;
+}
+
+.banner-list>ul {
+    counter-increment: css-counter 0;
+}
+
+.ban-list::after {
+    background: #f6f6f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    content: "0" counter(css-counter);
+    counter-increment: css-counter;
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+}
+
+.list-contant {
+    font-size: 16px !important;
+}
+
+.btn-ancor {
+    background-color: #141414;
+    min-width: 75px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px !important;
+    padding: 16px 32px !important;
+    border-radius: 35px;
+}
+
+</style>
+<div class="col-lg-6 col-md-12">
+    <h2 class="h2 py-3 fw-bold banner-heading">Start investing simply and with confidence</h2>
+    <div class="banner-list">
+        <ul class="position-relative list-unstyled">
+            <div class="position-relative">
+                <li class="mb-4 ban-list ps-5">
+                    <div class="list-contant fw-bold">
+                        Create an account
+                    </div>
+                    <p class="banner-para">
+                        Creating a Nectaro account takes no more than a couple of minutes
+                    </p>
+                </li>
+            </div>
+            <div class="position-relative">
+                <li class="mb-4 ban-list ps-5">
+                    <div class="list-contant fw-bold">
+                        Verify your identity
+                    </div>
+                    <p class="banner-para">
+                        Complete identity verification to help us secure your account
+                    </p>
+                </li>
+            </div>
+            <div class="position-relative">
+                <li class="mb-4 ban-list ps-5">
+                    <div class="list-contant fw-bold">
+                        Add funds
+                    </div>
+                    <p class="banner-para">
+                        Deposit funds from your personal or company bank account
+                    </p>
+                </li>
+            </div>
+            <div class="position-relative">
+                <li class="mb-4 ban-list ps-5">
+                    <div class="list-contant fw-bold">
+                        Invest
+                    </div>
+                    <p class="banner-para">
+                        Invest in thousands of loans and start earning interest!
+                    </p>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div class="primary-btn">
+        <a href="#" class="position-relative btn-ancor">
+            Start now
+            <span class="primary-span">
+                <svg class="primary-arrow-icon" width="12" height="12" viewBox="0 0 11 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 1L9 5L5 9" stroke="black" stroke-width="1.5" />
+                    <path d="M9 5H1" stroke="black" stroke-width="1.5" />
+                </svg>
+                <svg class="primary-arrow-icon2" width="12" height="12" viewBox="0 0 11 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 1L9 5L5 9" stroke="black" stroke-width="1.5" />
+                    <path d="M9 5H1" stroke="black" stroke-width="1.5" />
+                </svg>
+            </span>
+        </a>
+    </div>
+</div>
