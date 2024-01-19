@@ -13,3 +13,20 @@ $(document).ready(function () {
         }
     });
 });
+$(document).ready(function () {
+    $(".tablinks").on("click", function () {
+        var tabName = $(this).data("tab");
+        var tabContent = $("#" + tabName);
+        var allTabContent = $(".tabcontent");
+        var allTabButtons = $(".tablinks");
+
+        allTabContent.hide();
+
+        allTabButtons.removeClass("b-active");
+
+        tabContent.show();
+        $(this).addClass("b-active");
+    });
+
+    $(".tablinks:first").click();
+});

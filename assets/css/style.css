@@ -504,3 +504,161 @@
         border-top: 2px solid #d0d2dc !important;
     }
 }
+
+/* add funds css */
+
+.banner-heading {
+    font-size: 3rem !important;
+    line-height: 3.625rem;
+    color: #141414;
+}
+
+.banner-para {
+    color: #616575;
+}
+
+.banner-list>ul {
+    counter-increment: css-counter 0;
+}
+
+.ban-list::after {
+    background: #f6f6f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    content: "0" counter(css-counter);
+    counter-increment: css-counter;
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+}
+
+.list-contant {
+    font-size: 16px !important;
+}
+
+.btn-ancor {
+    background-color: #141414;
+    min-width: 75px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px !important;
+    padding: 16px 32px !important;
+    border-radius: 35px;
+}
+.alrt-1{
+    background: #f6f3fe;
+}
+.alrt-1 svg{
+    color: #664cf6;
+}
+.alrt-2{
+    background: #fff0f2;
+}
+.alrt-2 svg{
+    color: #ff2435;
+}
+.caption--text{
+    color: #353740;
+    font-size: 15px;
+    font-weight: 400;
+}
+@media (max-width:576px){
+    .caption--text{
+        font-size: 13px;
+    }
+}
+.neutral-text {
+    color: #616575 !important;
+}
+.primary-text{
+    color: #664cf6;
+}
+.withdraw-box .neutral-text{
+    font-size: 18px;
+}
+.with-input{
+    padding: 14px 18px;
+    background: #f6f6f9;
+    border-radius: 7px;
+}
+.with-input input{
+    background: #f6f6f9;
+    outline: none !important;
+    border: none !important;
+    padding: 6px;
+}
+.with-dropdn .filter-drop span{
+    margin-left: 12px ;
+}
+.with-dropdn .dropdwn-txt{
+    max-width: 180px;
+}
+.with-btn button{
+    background: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.prof-aside{
+    flex: 0 0 200px;
+}
+.prof-link .b-btn{
+    padding: 10px 14px;
+}
+.prof-link .b-btn.b-active{
+    color: #fff !important;
+    background: #000;
+}
+.prof-content{
+    flex: 1;
+}
+.text-led{
+    font-size: 1.25rem;
+}
+.pass-inp{
+    background: #f6f6f9;
+    padding: 8px 16px;
+    border-radius: 8px;
+    min-height: 58px;
+}
+.vp-inpt{
+    display: flex;
+    flex: 1 1 auto;
+}
+.vp-inpt input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+.vp-icon button{
+    max-width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.neutral-text-7{
+    color: #353740 !important;
+}
+.neutral-text-3{
+    color: #a0a3b0;
+}
+.pas-info{
+    font-size: 16px;
+}
+@media (max-width:768px){
+    .pas-info{
+        font-size: 13px;
+    }
+}
